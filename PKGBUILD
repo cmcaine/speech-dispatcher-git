@@ -14,7 +14,8 @@ depends=('glib2' 'libao' 'python')
 optdepends=('festival-freebsoft-utils: Speech output using Festival.'
             'flite: Speech output using Festival Lite.'
             'espeak: Speech output using ESpeak.'
-            'svox-pico-git: Speech output using Android pico voice.')
+            'svox-pico-bin: Speech output using Android pico voice.'
+            'python-xdg: required for spd-conf')
 makedepends=('pkgconfig' 'espeak' 'dotconf' 'automake' 'intltool')
 provides=("speech-dispatcher")
 conflicts=('speech-dispatcher')
