@@ -5,7 +5,7 @@
 # Contributor: Storm Dragon <stormdragon2976@gmail.com>
 
 pkgname=speech-dispatcher-git
-pkgver=0.8.r3.g9f40cd2
+pkgver=0.9_dev.r182.g4e173a4a
 pkgrel=1
 arch=('i686' 'x86_64')
 pkgdesc="High-level device independent layer for speech synthesis interface (development version)."
@@ -20,9 +20,9 @@ makedepends=('pkgconfig' 'espeak' 'dotconf' 'automake' 'intltool')
 provides=('libspeechd' 'speech-dispatcher')
 conflicts=('libspeechd' 'speech-dispatcher')
 options=('!libtool') 
-url="http://www.freebsoft.org/speechd"
+url="https://github.com/brailcom/speechd"
 _gitname="speechd"
-source=(${_gitname}::'git://git.freebsoft.org/git/speechd.git'
+source=(${_gitname}::'git://github.com/brailcom/speechd.git'
         'speech-dispatcherd.service'
 	"speech-dispatcher-git.install")
 #source=("speechd.run" "speechd.sh" "speechd.logrotate")
