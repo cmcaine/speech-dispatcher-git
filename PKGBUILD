@@ -10,13 +10,13 @@ pkgrel=1
 arch=('i686' 'x86_64')
 pkgdesc="High-level device independent layer for speech synthesis interface (development version)."
 license=('GPL2' 'FDL')
-depends=('glib2' 'libao' 'python')
+depends=('glib2' 'libao' 'python' 'dotconf')
 optdepends=('festival-freebsoft-utils: Speech output using Festival.'
             'flite: Speech output using Festival Lite.'
             'espeak: Speech output using ESpeak.'
             'svox-pico-bin: Speech output using Android pico voice.'
             'python-xdg: required for spd-conf')
-makedepends=('pkgconfig' 'espeak' 'dotconf' 'automake' 'intltool')
+makedepends=('pkgconfig' 'espeak' 'automake' 'intltool')
 provides=('libspeechd' 'speech-dispatcher')
 conflicts=('libspeechd' 'speech-dispatcher')
 options=('!libtool') 
